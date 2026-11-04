@@ -1,0 +1,76 @@
+body,
+html {
+  height: 100%;
+  background-color: #404040;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+.outer {
+  display: table;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.inner {
+  max-width: 400px;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-block {
+  margin-bottom: 50px;
+}
+
+.android-app img,
+.ios-app img {
+  height: 50px;
+}
+
+.android-app {
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .logo {
+    height: 80px;
+  }
+  .inner {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+  .android-app img,
+  .ios-app img {
+    height: 40px;
+  }
+  .android-app {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .android-app img,
+  .ios-app img {
+    height: 40px;
+  }
+  .android-app {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.ad{
+  margin-bottom: 40px;
+}
+
+.ad p{
+  color: rgba(255,255,255,.7);
+}

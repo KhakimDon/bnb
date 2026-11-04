@@ -1,0 +1,5 @@
+# Включить, когда веб-приложение выкачено на прод (bb-coffee.uic.group/app/).
+# Заменить этим файлом _redirects и залить сайт на Netlify.
+# Netlify сам переносит ?b=…&t=… со старых наклеек на столах.
+/app    https://bb-coffee.uic.group/app/        302
+/app/*  https://bb-coffee.uic.group/app/:splat  302
