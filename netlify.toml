@@ -1,2 +1,8 @@
 [build]
   publish = "."
+
+# Universal Links association file has no extension — serve it as JSON.
+[[headers]]
+  for = "/.well-known/apple-app-site-association"
+  [headers.values]
+    Content-Type = "application/json"
