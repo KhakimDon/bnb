@@ -5,8 +5,8 @@
       "namespace": "android_app",
       "package_name": "uz.bnb.android",
       "sha256_cert_fingerprints": [
-        "REPLACE_WITH_PLAY_APP_SIGNING_SHA256",
-        "REPLACE_WITH_UPLOAD_KEY_SHA256"
+        "F6:B2:0C:F1:1E:3B:04:3F:0E:12:D6:49:9A:C1:BC:84:80:C6:B7:BE:C3:A0:15:A2:0C:7B:BF:3D:8C:05:D5:6A",
+        "59:1A:6C:C6:77:70:57:D3:F1:B7:E9:EF:2B:BF:C3:FC:34:A4:3C:1E:F9:17:D6:B8:73:0C:2B:18:F6:DC:AD:B0"
       ]
     }
   }
