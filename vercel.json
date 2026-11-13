@@ -1,16 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "https://bb-coffee.uic.group/api/:path*" },
-    { "source": "/media/:path*", "destination": "https://bb-coffee.uic.group/media/:path*" },
-    { "source": "/static/:path*", "destination": "https://bb-coffee.uic.group/static/:path*" },
-    { "source": "/app/:path*", "destination": "/index.html" },
-    { "source": "/app", "destination": "/index.html" },
-    { "source": "/:path*", "destination": "/index.html" }
-  ],
-  "headers": [
-    {
-      "source": "/.well-known/apple-app-site-association",
-      "headers": [{ "key": "Content-Type", "value": "application/json" }]
-    }
+  "routes": [
+    { "src": "/api/(.*)", "dest": "https://bb-coffee.uic.group/api/$1" },
+    { "src": "/media/(.*)", "dest": "https://bb-coffee.uic.group/media/$1" },
+    { "src": "/static/(.*)", "dest": "https://bb-coffee.uic.group/static/$1" },
+    { "src": "/\\.well-known/apple-app-site-association", "headers": { "content-type": "application/json" }, "continue": true },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
